@@ -2,8 +2,11 @@ body {
   font-family: 'courier', sans-serif;
 }
 
+/*NAVBAR*/
+
 .jumbotron {
   background-color: white;
+  margin-bottom: 0px;
 }
 
 .post-q-nav-item {
@@ -40,4 +43,15 @@ body {
 .quiet-img {
   display: inline-block;
   width: 2em;
+}
+
+/*MESSAGE BOARD*/
+
+.message-container {
+  background-color: pink;
+  padding: 10px 20px;
+  margin-bottom: 12px;
+  text-align: center;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
