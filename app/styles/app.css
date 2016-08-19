@@ -28,7 +28,7 @@ body {
 
 .title {
   font-family: 'Baloo Da', cursive;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .subtitle {
@@ -43,6 +43,14 @@ body {
 .quiet-img {
   display: inline-block;
   width: 2em;
+}
+
+.new-q-btn {
+  margin-top: 0px;
+  margin-left: 6px;
+  padding: 0;
+  background-color: inherit;
+  border: none;
 }
 
 /*MESSAGE BOARD*/

@@ -2,14 +2,18 @@
   <div class="col-sm-3">
     <ul class="nav navbar-nav navbar">
       <li>
-        <a href="#" class="post-q-nav-item">
-        <img src="assets/images/quiet.png" alt="quiet symbol" class="quiet-img img-responsive"/>
-        POST Q</a>
+        <!-- How do I send action up into app controller to toggle property in index? -->
+        {{#link-to "new-question"}}
+          <button {{action 'showQuestionForm'}} class="new-q-btn post-q-nav-item">POST Q
+          <img src="assets/images/quiet.png" alt="quiet symbol" class="quiet-img img-responsive"/></button>
+        {{/link-to}}
       </li>
     </ul>
   </div>
   <div class="col-sm-6">
-    <h1 class="title">QT<span class="patoo-tee">patoo-<br>tee</span>&amp;A</h1>
+    {{#link-to "index"}}
+      <h1 class="title">QT<span class="patoo-tee">patoo-<br>tee</span>&amp;A</h1>
+    {{/link-to}}
   </div>
   <div class="col-sm-3">
     <ul class="nav navbar-nav navbar-right">
@@ -28,7 +32,7 @@
 <hr>
 <div class="row">
   <div class="col-sm-12">
-    <h3 class="subtitle">Harmless Questions for Prudent Cuties</h3>
+    <h3 class="subtitle">The Prudent Cutie Forum</h3>
   </div>
 </div>
 <hr>
