@@ -1,7 +1,29 @@
 # Message-board-ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### EMBER JS Independent Project
+Ember and Firebase app for Epicodus 08.19.2016
+### _By Sebastian Adam Prokuski_
+
+***
+
+## Description
+This app yields a question and answer message board where a user submits a question and other users can respond with answers.
+
+## User Stories
+
+* Questions should have the content of the question itself, an author and additional notes.
+
+* Answers should have the content of the answer and the author.
+
+* Include a header and/or navbar that appears on all pages containing the name of your site and a link to the home page.
+
+* List all questions on the homepage, with only the question and the name of the author showing.
+
+* Users should be able to click on a question to view additional information.
+
+* Allow users to add and edit questions.
+
+* Allow users to add answers to a question. Answers should be added and viewed on the same page as the question they respond to.
 
 ## Prerequisites
 
@@ -51,3 +73,12 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## Technologies
+* Angular 2
+* Typescript
+* Gulp
+* Bower
+* Sass
+
+## Legal
+Copyright (c) 2016 **_{Sebastian Prokuski}_**
