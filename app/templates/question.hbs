@@ -1,5 +1,7 @@
 {{nav-bar saveQuestion="saveQuestion"}}
 
+{{update-question question=model update="update"}}
+
 {{question-tile question=model destroyQuestion="destroyQuestion"}}
 
 <div class="row">
@@ -8,4 +10,4 @@
   </div>
 </div>
 
-{{new-answer saveAnswer="saveAnswer" question=model}}
+{{new-answer question=model saveAnswer="saveAnswer" }}
