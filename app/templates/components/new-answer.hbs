@@ -1,1 +1,34 @@
-{{yield}}
+<div class="jumbotron answer-form-container">
+  <div class="row">
+    <div class="col-sm-10 col-md-offset-1 text-center">
+      <form class="question-form answer-form">
+        <h1>NEW A</h1>
+        <div class="row">
+          <div class="col-sm-5 text-center">
+            <div class="form-group name">
+              <label for="name">Name</label>
+              {{input value=author id="name"}}
+            </div>
+
+            <div class="form-group date">
+              <label for="date">Date</label>
+              {{input value=date id="date"}}
+            </div>
+          </div>
+          <div class="col-sm-7 text-center">
+            <div class="form-group question">
+              <label for="question">Answer</label>
+              {{textarea rows="4" value=content id="question"}}
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <button{{action 'saveAnswer'}}>Save</button>
+            <button{{action 'cancelSaveAnswer'}}>Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,3 +1,4 @@
+/*GENERAL*/
 body {
   font-family: 'courier', sans-serif;
 }
@@ -6,15 +7,31 @@ a {
   color: black;
 }
 
+.mynav:hover, a:hover {
+  color: rgba(	230,230,250, 1);
+  text-decoration: none;
+  background-color:transparent;
+  border:0;
+}
+
 .fake-nav {
   color: silver;
 }
 
-/*NAVBAR*/
+/*REMOVE BOOTSTRAP STYLES FROM DROPDOWN*/
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: white;
+  border-color: white;
+}
 
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+
+/*NAVBAR*/
 .jumbotron {
   background-color: white;
-  margin-bottom: 0px;
+  padding-bottom: 5px;
 }
 
 .post-q-nav-item {
@@ -62,14 +79,17 @@ a {
 }
 
 /*MESSAGE BOARD*/
-
 .message-container {
   background-color: pink;
   padding: 10px 20px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   text-align: center;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
+}
+
+.answer-container {
+  background-color: rgba(	230,230,250, 1);
 }
 
 .message-board {
@@ -81,9 +101,17 @@ input, textarea {
 }
 
 .question-form {
-
   padding: 20px 50px 50px;
-    background-color: rgba(255,192,203,.5);
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+  background-color: rgba(255,192,203,.5);
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.answer-form {
+  background-color: rgba(	230,230,250, .5);
+  margin-bottom: 0;
+}
+
+.answer-form-container {
+  padding-top: 0;
 }

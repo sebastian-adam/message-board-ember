@@ -4,7 +4,6 @@ export default Ember.Component.extend({
   newQuestionRequest: false,
   actions: {
     showQuestionForm() {
-      console.log('true');
       this.toggleProperty('newQuestionRequest');
     },
     saveQuestion(params) {
