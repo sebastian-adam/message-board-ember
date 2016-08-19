@@ -20,10 +20,16 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-menu-hamburger menu-nav-item"></i></a>
           <ul class="dropdown-menu">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Admin Portal</a></li>
+            {{#link-to "about"}}
+              <li><a href="#">About</a></li>
+            {{/link-to}}
+            {{#link-to "contact"}}
+              <li><a href="#">Contact</a></li>
+            {{/link-to}}
+              <li role="separator" class="divider"></li>
+            {{#link-to "admin"}}
+              <li><a href="#">Admin Portal</a></li>
+            {{/link-to}}
           </ul>
         </li>
       </ul>

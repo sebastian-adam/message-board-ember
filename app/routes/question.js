@@ -2,27 +2,27 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return Ember.RSVP.hash({
-      question: this.store.findRecord('question', params.question_id),
-      answers: this.store.findAll('answer')
-    });
+    return this.store.findRecord('question', params.question_id);
   },
   actions: {
-    saveAnswer(question, answer) {
-      answer.get('question').addObject(answer);
-      question.get('answers').addObject(question);
-      question.save().then(function() {
-        return answer.save();
+    saveAnswer(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      var question = params.question;
+      question.get('answers').addObject(newAnswer);
+      newAnswer.save().then(function() {
+       return question.save();
       });
-      this.transitionTo('question', question.id);
+      this.transitionTo('question', params.question);
     },
-    removeAnswer(question, answer) {
-      answer.get('question').removeObject(question);
-      question.get('answers').removeObject(answer);
-      question.save().then(function() {
-        return answer.save();
+    destroyQuestion(question) {
+      var answer_deletions = question.get('answers').map(function(answer) {
+        return answer.destroyRecord();
       });
-      this.transitionTo('question', question.id);
+      Ember.RSVP.all(answer_deletions)
+         .then(function() {
+         return question.destroyRecord();
+      });
+      this.transitionTo('index');
     }
   }
 });
