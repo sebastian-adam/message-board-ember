@@ -3,10 +3,8 @@
     <ul class="nav navbar-nav navbar">
       <li>
         <!-- How do I send action up into app controller to toggle property in index? -->
-        {{#link-to "new-question"}}
-          <button {{action 'showQuestionForm'}} class="new-q-btn post-q-nav-item">POST Q
-          <img src="assets/images/quiet.png" alt="quiet symbol" class="quiet-img img-responsive"/></button>
-        {{/link-to}}
+        <button {{action 'showQuestionForm'}} class="new-q-btn post-q-nav-item">POST Q
+        <img src="assets/images/quiet.png" alt="quiet symbol" class="quiet-img img-responsive"/></button>
       </li>
     </ul>
   </div>
@@ -36,3 +34,6 @@
   </div>
 </div>
 <hr>
+{{#if newQuestionRequest}}
+  {{new-question saveQuestion="saveQuestion" newQuestionRequest=newQuestionRequest}}
+{{/if}}

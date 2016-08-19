@@ -2,6 +2,14 @@ body {
   font-family: 'courier', sans-serif;
 }
 
+a {
+  color: black;
+}
+
+.fake-nav {
+  color: silver;
+}
+
 /*NAVBAR*/
 
 .jumbotron {
@@ -46,7 +54,7 @@ body {
 }
 
 .new-q-btn {
-  margin-top: 0px;
+  margin-top: 10px;
   margin-left: 6px;
   padding: 0;
   background-color: inherit;

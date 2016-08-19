@@ -4,7 +4,11 @@ export default Ember.Component.extend({
   newQuestionRequest: false,
   actions: {
     showQuestionForm() {
-      this.set('newQuestionRequest', true);
+      console.log('true');
+      this.toggleProperty('newQuestionRequest');
+    },
+    saveQuestion(params) {
+      this.sendAction('saveQuestion', params);
     }
   }
 });
