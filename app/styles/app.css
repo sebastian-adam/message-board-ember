@@ -7,12 +7,16 @@ a {
   color: black;
 }
 
-.mynav:hover, a:hover, a:focus, button:focus {
+.mynav:hover, a:hover {
   color: rgba(	230,230,250, 1);
   text-decoration: none;
   background-color:transparent;
   border:0;
-  outline: none;
+}
+
+a:focus, button:focus {
+  color: rgba(	230,230,250, 1);
+  text-decoration: none;
 }
 
 .fake-nav {

@@ -4,23 +4,26 @@ export default Ember.Component.extend({
   actions: {
     saveAnswer(){
       var params = {
-        content: this.get('content'),
-        author: this.get('author'),
-        date: this.get('date')
+        content: this.get('answer-content'),
+        author: this.get('answer-author'),
+        date: this.get('answer-date')
       };
       if (params.content !== undefined && params.author !== undefined && params.date !== undefined) {
+        console.log(params.content);
+        console.log(params.author);
+        console.log(params.date);
         this.sendAction('saveAnswer', params);
-        this.set('content', '');
-        this.set('author', '');
-        this.set('date', '');
+        this.set('answer-content', '');
+        this.set('answer-author', '');
+        this.set('answer-date', '');
       } else {
         alert('Please fill out all fields.');
       }
     },
     cancelSaveAnswer(){
-      this.set('content', '');
-      this.set('author', '');
-      this.set('date', '');
+      this.set('answer-content', '');
+      this.set('answer-author', '');
+      this.set('answer-date', '');
     }
   }
 });
