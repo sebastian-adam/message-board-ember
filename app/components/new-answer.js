@@ -6,12 +6,10 @@ export default Ember.Component.extend({
       var params = {
         content: this.get('answer-content'),
         author: this.get('answer-author'),
-        date: this.get('answer-date')
+        date: this.get('answer-date'),
+        question: this.get('question')
       };
       if (params.content !== undefined && params.author !== undefined && params.date !== undefined) {
-        console.log(params.content);
-        console.log(params.author);
-        console.log(params.date);
         this.sendAction('saveAnswer', params);
         this.set('answer-content', '');
         this.set('answer-author', '');
