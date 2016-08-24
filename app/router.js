@@ -11,6 +11,9 @@ Router.map(function() {
   this.route('contact');
   this.route('admin');
   this.route('question', {path: '/question/:question_id'});
+  this.route('index', {path: '/'}, function() {
+    this.route('new-question', {path: '/new-question'});
+  });
 });
 
 export default Router;

@@ -24,6 +24,7 @@ export default Ember.Component.extend({
       this.set('content', '');
       this.set('author', '');
       this.set('date', '');
+      this.sendAction('transitionToHome');
     }
   }
 });

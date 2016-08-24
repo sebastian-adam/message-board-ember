@@ -1,34 +1,37 @@
 {{#if newQuestionRequest}}
-<div class="row">
-  <div class="col-sm-10 col-md-offset-1 text-center">
-    <form class="question-form">
-      <h1>NEW Q</h1>
-      <div class="row">
-        <div class="col-sm-5 text-center">
-          <div class="form-group name">
-            <label for="name">Name</label>
-            {{input value=author id="name"}}
-          </div>
+<div class="jumbotron question-form-container">
+  <div class="row">
+    <div class="col-sm-10 col-md-offset-1 text-center">
+      <form class="question-form">
+        <h1>NEW Q</h1>
+        <div class="row">
+          <div class="col-sm-5 text-center">
+            <div class="form-group name">
+              <label for="name">Name</label>
+              {{input value=author id="name"}}
+            </div>
 
-          <div class="form-group date">
-            <label for="date">Date</label>
-            {{input value=date id="date"}}
+            <div class="form-group date">
+              <label for="date">Date</label>
+              {{input value=date id="date"}}
+            </div>
+          </div>
+          <div class="col-sm-7 text-center">
+            <div class="form-group question">
+              <label for="question">Question</label>
+              {{textarea rows="4" value=content id="question"}}
+            </div>
           </div>
         </div>
-        <div class="col-sm-7 text-center">
-          <div class="form-group question">
-            <label for="question">Question</label>
-            {{textarea rows="4" value=content id="question"}}
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <button{{action 'saveQuestion'}}>Save</button>
+            <button{{action 'cancelSaveQuestion'}}>Cancel</button>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <button{{action 'saveQuestion'}}>Save</button>
-          <button{{action 'cancelSaveQuestion'}}>Cancel</button>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </div>
+<hr>
 {{/if}}
