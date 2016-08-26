@@ -18,14 +18,15 @@
   </div>
   {{#each question.answers as |answer|}}
     <div class="message-container answer-container">
+      <div class="col-sm-3 col-sm-offset-10">
+        <button>Up <span class="badge">{{answer.likes}}</span></button>
+        <button>Dn <span class="badge">{{answer.dislikes}}</span></button>
+      </div>
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
           <h3>{{answer.content}}</h3>
         </div>
-        <div class="col-sm-1">
-          <button>Up</button>
-          <button>Dn</button>
-        </div>
+
       </div>
       <div class="row">
         <div class="col-sm-5 col-sm-offset-7">

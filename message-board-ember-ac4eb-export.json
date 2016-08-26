@@ -4,31 +4,41 @@
       "author" : "Paul Wall",
       "content" : "Hand, for sure.",
       "date" : "2016-05-16",
-      "question" : "-KPa4B30VPF247ptufx2"
+      "question" : "-KPa4B30VPF247ptufx2",
+      "likes" : 0,
+      "dislikes": 0
     },
     "-KPa5BBeyOlLwszbAWy6" : {
       "author" : "Samuel Sammy",
       "content" : "You're crazy, Paul. Definitely on the cheek.",
       "date" : "2016-05-17",
-      "question" : "-KPa4B30VPF247ptufx2"
+      "question" : "-KPa4B30VPF247ptufx2",
+      "likes" : 0,
+      "dislikes": 0
     },
     "-KPa5OkfK7UCx-d3m-lI" : {
       "author" : "Gina Giant",
       "content" : "William Warber, back in the 3rd grade! Total hunk!",
       "date" : "2016-03-12",
-      "question" : "-KPa4H0Qe9PePSS5Tq1b"
+      "question" : "-KPa4H0Qe9PePSS5Tq1b",
+      "likes" : 0,
+      "dislikes": 0
     },
     "-KPa5Y4U3kFlvkDTKlYI" : {
       "author" : "John Long",
       "content" : "Green eyes, ftw.",
       "date" : "2016-05-22",
-      "question" : "-KPa4NAs40OLgQe07ycU"
+      "question" : "-KPa4NAs40OLgQe07ycU",
+      "likes" : 0,
+      "dislikes": 0
     },
     "-KPa5cGrBuzvIn1katH8" : {
       "author" : "Betsy Ross",
       "content" : "Blue blue blue blue.",
       "date" : "2016-05-23",
-      "question" : "-KPa4NAs40OLgQe07ycU"
+      "question" : "-KPa4NAs40OLgQe07ycU",
+      "likes" : 0,
+      "dislikes": 0
     }
   },
   "questions" : {
