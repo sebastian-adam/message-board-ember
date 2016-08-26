@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('index', {path: '/'}, function() {
     this.route('new-question', {path: '/new-question'});
   });
+  this.route('my-favorites');
 });
 
 export default Router;

@@ -2,12 +2,10 @@
   <div class="row">
     <div class="col-sm-3">
       <ul class="nav navbar-nav navbar">
-        <li>
-          {{#link-to 'index.new-question'}}
+        {{#link-to 'index.new-question' class="new-q-link"}}
           <button class="mynav new-q-btn post-q-nav-item">POST Q
           <img src=".././assets/images/quiet.png" alt="quiet symbol" class="quiet-img img-responsive"/></button>
-          {{/link-to}}
-        </li>
+        {{/link-to}}
       </ul>
     </div>
     <div class="col-sm-6">
@@ -15,7 +13,12 @@
         <h1 class="title">QT<span class="patoo-tee">patoo-<br>tee</span>&amp;A</h1>
       {{/link-to}}
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
+      {{#link-to "my-favorites"}}
+        <button class="favorites-btn mynav post-q-nav-item"><i class="glyphicon glyphicon-star"></i> SAVED</button>
+      {{/link-to}}
+    </div>
+    <div class="col-sm-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-menu-hamburger menu-nav-item"></i></a>

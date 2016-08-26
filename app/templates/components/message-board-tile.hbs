@@ -1,23 +1,26 @@
-
-  <div class="message-container tile-hover">
-    <div class="row">
-      <div class="col-sm-1">
-        <button class="question-star-icon"><i class="glyphicon glyphicon-star-empty"></i></button>
-      </div>
-      {{#link-to 'question' question.id}}
-      <div class="question-content col-sm-10">
-        <h3>{{question.content}}</h3>
-      </div>
-      {{/link-to}}
-      {{#link-to 'question' question.id}}
-      <div class="col-sm-1">
-        <span class="answer-count-badge badge">{{question.answers.length}}</span>
-      </div>
-      {{/link-to}}
+<div class="message-container tile-hover">
+  <div class="row">
+    <div class="col-sm-1">
+      <button {{action 'addToFavorites' question}} class="question-star-icon"><i class="glyphicon glyphicon-star-empty"></i></button>
     </div>
-    <div class="row">
-      <div class="col-sm-5 col-sm-offset-7">
-        <h5><em>{{question.author}} ({{question.date}})</em></h5>
-      </div>
+    {{#link-to 'question' question.id}}
+    <div class="question-content col-sm-10">
+      <h3>{{question.content}}</h3>
+    </div>
+    {{/link-to}}
+    {{#link-to 'question' question.id}}
+    <div class="col-sm-1">
+      <span class="answer-count-badge badge">{{question.answers.length}}</span>
+    </div>
+    {{/link-to}}
+  </div>
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-7">
+      <h5><em>{{question.author}} ({{question.date}})</em></h5>
     </div>
   </div>
+</div>
+
+{{#each favoritesList.favorites as |favorite|}}
+  <p>{{favorite.content}}</p>
+{{/each}}
