@@ -207,6 +207,6 @@ input, textarea {
   color: #2a2a2a;
 }
 
-.question-star-icon:hover {
+.question-star-icon:hover, .yellow-star {
   color: yellow;
 }

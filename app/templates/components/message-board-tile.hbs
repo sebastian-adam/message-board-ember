@@ -1,7 +1,11 @@
 <div class="message-container tile-hover">
   <div class="row">
     <div class="col-sm-1">
-      <button {{action 'addToFavorites' question}} class="question-star-icon"><i class="glyphicon glyphicon-star-empty"></i></button>
+      {{#if checkForFavorite}}
+        <button {{action 'addToFavorites' question}} class="question-star-icon"><i class="glyphicon glyphicon-star-empty yellow-star"></i></button>
+      {{else}}
+        <button {{action 'addToFavorites' question}} class="question-star-icon"><i class="glyphicon glyphicon-star-empty"></i></button>
+      {{/if}}
     </div>
     {{#link-to 'question' question.id}}
     <div class="question-content col-sm-10">
