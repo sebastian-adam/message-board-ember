@@ -1,29 +1,38 @@
 # Message-board-ember
 
-#### EMBER JS Independent Project
-Ember and Firebase app for Epicodus 08.19.2016
+#### EMBER JS Extended Independent Project
+Ember and Firebase app for Epicodus 08.26.2016
 ### _By Sebastian Adam Prokuski_
 
 ***
 
 ## Description
-This app yields a question and answer message board where a user submits a question and other users can respond with answers.
+This app yields a question and answer message board where a user submits a question and other users can respond with answers. Additional features include temporary storage of a user's favorited questions, an up-voting (and down-voting) system for answers, and a filter for hiding answers with very poor ratings.
 
 ## User Stories
 
-* Questions should have the content of the question itself, an author and additional notes.
+* Questions have the content of the question itself, an author and additional notes.
 
-* Answers should have the content of the answer and the author.
+* Answers have the content of the answer and the author.
 
-* Include a header and/or navbar that appears on all pages containing the name of your site and a link to the home page.
+* A header and navbar appear on all pages containing the name of your site and a link to the home page.
 
-* List all questions on the homepage, with only the question and the name of the author showing.
+* A list of all questions appears on the homepage, with only the question and the name of the author showing.
 
-* Users should be able to click on a question to view additional information.
+* Users can click on a question to view additional information.
 
-* Allow users to add and edit questions.
+* Users can add and edit questions.
 
-* Allow users to add answers to a question. Answers should be added and viewed on the same page as the question they respond to.
+* Users can add answers to a question. Answers are added and viewed on the same page as the question they respond to.
+
+* Users can upvote the answer they think is best, and answers are sorted by number of upvotes.
+
+* Question tiles display the number of associated answers with a computed property.
+
+* Users can create lists of favorite questions (and their answers) to reference later.
+
+* Special icons are used for favorited questions and poorly rated answers.
+
 
 ## Prerequisites
 
