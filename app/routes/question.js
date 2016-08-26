@@ -41,6 +41,13 @@ export default Ember.Route.extend({
          return question.destroyRecord();
       });
       this.transitionTo('index');
+    },
+    like(answer, question) {
+      console.log(answer);
+      var currentLikes = answer.get('likes');
+      var totalLikes = currentLikes += 1;
+      answer.set('likes', totalLikes);
+      this.transitionTo('question', question.id);
     }
   }
 });
