@@ -45,13 +45,15 @@ export default Ember.Route.extend({
     like(answer, question) {
       var currentLikes = answer.get('likes');
       var totalLikes = currentLikes += 1;
-      answer.set('likes', totalLikes);
+      answer.setProperties({ likes: totalLikes });
+      answer.save();
       this.transitionTo('question', question.id);
     },
     dislike(answer, question) {
       var currentDislikes = answer.get('dislikes');
       var totalDislikes = currentDislikes += 1;
-      answer.set('dislikes', totalDislikes);
+      answer.setProperties({ dislikes: totalDislikes });
+      answer.save();
       this.transitionTo('question', question.id);
     }
   }

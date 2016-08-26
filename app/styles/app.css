@@ -1,26 +1,44 @@
 /*GENERAL*/
 body {
   font-family: 'courier', sans-serif;
+  color: #2a2a2a;
 }
 
 a {
   color: black;
 }
 
-.mynav:hover, a:hover {
-  color: rgba(	230,230,250, 1);
-  text-decoration: none;
-  background-color:transparent;
-  border:0;
+button {
+  background-color: lightgrey;
 }
 
-a:focus, button:focus {
-  color: rgba(	230,230,250, 1);
-  text-decoration: none;
+button:hover {
+  color: #2a2a2a;
 }
 
-.fake-nav {
-  color: silver;
+.new-answer-btn {
+  background-color: rgba(230,230,250,1);
+}
+
+.new-question-btn, .new-update-btn {
+  background-color: rgba(255,192,203,1);
+}
+
+.tile-hover:hover {
+  background-color: rgba(230,230,250,1);
+  color: black;
+  /*text-decoration: none;*/
+  /*background-color: transparent;*/
+}
+
+.tile-hover:hover span {
+  background-color: rgba(255,192,203,1);
+  color: #2a2a2a;
+}
+
+.answer-rating:hover span {
+  background-color: rgba(255,192,203,1);
+  color: white;
 }
 
 /*REMOVE BOOTSTRAP STYLES FROM DROPDOWN*/
@@ -61,6 +79,22 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   margin-top: 10px;
 }
 
+.title-link, .title-link:focus {
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+.title-link:hover {
+  color: rgba(230,230,250,1);
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover, .dropdown-menu li a:focus {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #2a2a2a;
+}
+
 .subtitle {
   font-style: italic;
   margin-top: 6px;
@@ -94,7 +128,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .answer-container {
-  background-color: rgba(	230,230,250, 1);
+  background-color: rgba(230,230,250,1);
 }
 
 .message-board {
@@ -113,7 +147,7 @@ input, textarea {
 }
 
 .answer-form {
-  background-color: rgba(	230,230,250, .5);
+  background-color: rgba(230,230,250,.5);
   margin-bottom: 0;
 }
 
@@ -131,4 +165,28 @@ input, textarea {
 .update-btn {
   position: absolute;
   top: 10px;
+}
+
+.answer-rating {
+  background-color: inherit;
+  border: none;
+}
+
+.answer-rating-badge, .answer-count-badge {
+  font-size: 1.3em;
+}
+
+.answer-rating-badge {
+  margin-top: -12px;
+  background-color: #FCFCFC;
+  color: rgba(255,192,203,1);
+}
+
+.answer-count-badge {
+  background-color: rgba(230,230,250,1);
+  color: #2a2a2a;
+}
+
+.answer-rating-icon {
+  font-size: 1.3em;
 }
