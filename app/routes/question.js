@@ -2,8 +2,13 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    console.log(params);
-    return this.store.findRecord('question', params.question_id);
+    return Ember.RSVP.hash({
+      question: this.store.findRecord('question', params.question_id),
+      answers: this.store.query('answer', {
+        orderBy: 'question',
+        equalTo: params.question_id
+      })
+    });
   },
   actions: {
     saveAnswer(params) {

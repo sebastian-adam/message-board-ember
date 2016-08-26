@@ -1,6 +1,6 @@
-{{update-question question=model update="update"}}
+{{update-question question=model.question update="update"}}
 
-{{question-tile question=model destroyQuestion="destroyQuestion" like="like" dislike="dislike"}}
+{{question-tile question=model.question answers=model.answers destroyQuestion="destroyQuestion" like="like" dislike="dislike"}}
 
 <div class="row">
   <div class="col-md-12">
@@ -8,4 +8,4 @@
   </div>
 </div>
 
-{{new-answer saveAnswer="saveAnswer" question=model}}
+{{new-answer saveAnswer="saveAnswer" question=model.question}}

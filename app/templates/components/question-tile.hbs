@@ -16,7 +16,7 @@
       </div>
     </div>
   </div>
-  {{#each question.answers as |answer|}}
+  {{#each answers as |answer|}}
     <div class="message-container answer-container">
       <div class="col-sm-4 col-sm-offset-9">
         <button {{action "like" answer question}} class="answer-rating"><i class="answer-rating-icon glyphicon glyphicon-thumbs-up"></i> <span class="badge answer-rating-badge">{{answer.likes}}</span></button>
