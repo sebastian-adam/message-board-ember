@@ -7,7 +7,9 @@ export default Ember.Component.extend({
         content: this.get('answer-content'),
         author: this.get('answer-author'),
         date: this.get('answer-date'),
-        question: this.get('question')
+        question: this.get('question'),
+        likes: 0,
+        dislikes: 0
       };
       if (params.content !== undefined && params.author !== undefined && params.date !== undefined) {
         this.sendAction('saveAnswer', params);
