@@ -26,9 +26,13 @@ button:hover {
 
 .tile-hover:hover {
   background-color: rgba(230,230,250,1);
-  color: black;
+
   /*text-decoration: none;*/
   /*background-color: transparent;*/
+}
+
+.question-content:hover {
+  color: black;
 }
 
 .tile-hover:hover span {
@@ -167,12 +171,12 @@ input, textarea {
   top: 10px;
 }
 
-.answer-rating {
+.answer-rating, .question-star-icon {
   background-color: inherit;
   border: none;
 }
 
-.answer-rating-badge, .answer-count-badge {
+.answer-rating-badge, .answer-count-badge, .answer-rating-icon, .question-star-icon {
   font-size: 1.3em;
 }
 
@@ -187,6 +191,6 @@ input, textarea {
   color: #2a2a2a;
 }
 
-.answer-rating-icon {
-  font-size: 1.3em;
+.question-star-icon:hover {
+  color: yellow;
 }
