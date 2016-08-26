@@ -8,6 +8,6 @@ export default Ember.Service.extend({
     }
   },
   clearFavorites() {
-    this.set('items', []);
+    this.set('favorites', []);
   }
 });
