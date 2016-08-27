@@ -5,6 +5,7 @@ export default Ember.Component.extend({
   actions: {
       clear() {
         this.get('favoritesList').clearFavorites();
+        this.sendAction('transitionToIndex');
       },
       like(answer) {
         this.sendAction('like', answer);

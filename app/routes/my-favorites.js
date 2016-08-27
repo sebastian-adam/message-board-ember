@@ -15,6 +15,9 @@ export default Ember.Route.extend({
       answer.setProperties({ dislikes: totalDislikes });
       answer.save();
       this.transitionTo('my-favorites');
+    },
+    transitionToIndex() {
+      this.transitionTo('index');
     }
   }
 });
