@@ -53,9 +53,10 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
+
 * Visit live at https://ancient-wave-65567.herokuapp.com/
 
-or run locally
+Run locally:
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
