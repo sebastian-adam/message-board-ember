@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   answerIsHidden: true,
   avgLiking: Ember.computed('answer.likes', 'answer.dislikes', function() {
     var likes = this.get('answer.likes');
-    var dislikes = this.get('answer.dislikes')
+    var dislikes = this.get('answer.dislikes');
     var score = this.get('answer.likes') / this.get('answer.dislikes');
     if ((score && isFinite(score)) || (likes === 0 && dislikes !== 0)) {
       return score;
